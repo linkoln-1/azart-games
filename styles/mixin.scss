@@ -1,0 +1,13 @@
+@mixin custom-grid($columns: 12, $gutter: 1rem) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 - ($gutter / 2);
+
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      flex: 0 0 #{percentage($i / $columns)};
+      max-width: #{percentage($i / $columns)};
+      padding: 0 ($gutter / 2);
+    }
+  }
+}

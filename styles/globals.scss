@@ -1,0 +1,26 @@
+@import "style";
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  @include custom-grid(12, 0rem);
+  margin: 50px 0 0 0;
+  padding: 5px;
+}
+.button {
+  width: 400px;
+  margin: auto;
+  .button_see_more {
+    width: 50%;
+    padding:15px;
+    text-align: center;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+  }
+}
